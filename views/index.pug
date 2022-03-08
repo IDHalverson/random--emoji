@@ -1,0 +1,24 @@
+doctype html
+html
+    head
+        title Random Emoji
+
+        meta(property="title" content="Random Emoji - " + emojiName)
+        meta(property="description" content="A random emoji, just for you!")
+
+        meta(property="og:type" content="website")
+        meta(property="og:url" content="https://a01e-73-128-105-225.ngrok.io")
+        meta(property="og:title" content="Random Emoji - " + emojiName)
+        meta(property="og:description" content="A random emoji, just for you!")
+        meta(property="og:image" content="https://a01e-73-128-105-225.ngrok.io/" + emojiPath)
+        
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="twitter:domain" value="a01e-73-128-105-225.ngrok.io")
+        meta(name="twitter:title" value="Random Emoji - " + emojiName)
+        meta(name="twitter:description" value="A random emoji, just for you!")
+        meta(name="twitter:image" content="https://a01e-73-128-105-225.ngrok.io/" + emojiPath)
+        meta(name="twitter:url" value="https://a01e-73-128-105-225.ngrok.io")
+
+    body
+        img(src=emojiPath)
+        h1 #{emojiName}
